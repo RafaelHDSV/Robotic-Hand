@@ -7,6 +7,10 @@ let modal = document.getElementById("modal_steps");
 let imageCard = document.querySelectorAll('.img_card')
 let imageModal = document.getElementById('img_modal')
 let close = document.querySelector('.close')
+let logo = document.querySelector('.logo')
+let qrCode = document.querySelector('.qr_code')
+let closeQrCode = document.querySelector('.close_qr_code')
+
 // CORRIGIR
 let emailForm = document.getElementById('email')
 let re = /\S+@\S+\.\S+/;
@@ -81,4 +85,14 @@ for (let i = 0; i < imageCard.length; i++) {
 
 close.addEventListener('click', () => {
     modal.style.display = 'none'
+})
+
+logo.addEventListener('click', () => {
+    if (qrCode.style.display = 'none') {
+        qrCode.style.display = 'flex'
+    }
+})
+
+closeQrCode.addEventListener('click', () => {
+    qrCode.style.display = 'none'
 })

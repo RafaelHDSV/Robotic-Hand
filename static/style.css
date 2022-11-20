@@ -139,6 +139,7 @@ h3 strong,
 .card p,
 .card img,
 .close,
+.close_qr_code,
 .container_main h2,
 .img_primary img,
 .container_secundary,
@@ -221,6 +222,17 @@ form button:hover {
     position: relative;
     animation: arrowAnimation 1.2s infinite alternate-reverse linear;
     user-select: none;
+}
+
+.qr_code {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7.5rem;
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid var(--pink);
 }
 
 .container_slide {
@@ -368,7 +380,8 @@ form button:hover {
     animation: zoomModal .6s;
 }
 
-.close {
+.close,
+.close_qr_code {
     position: absolute;
     top: 1rem;
     right: 2rem;
@@ -378,7 +391,9 @@ form button:hover {
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.close_qr_code:hover,
+.close_qr_code:focus {
     color: var(--dark_pink);
     text-decoration: none;
 }
