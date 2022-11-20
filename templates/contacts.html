@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"
+        content="Rafael Henrique de Sousa Vieira, Heloisa Marani Pereira de Menezes, Larrisa Banaco Pussu Oscar">
+    <meta name="keywords"
+        content="Robotic Hand, html, css, javascript, python, flask, frontend, backend, route, Rafael Henrique de Sousa Vieira, Heloisa Marani Pereira de Menezes, Larrisa Banaco Pussu Oscar">
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="In this repository, a landing page was made for a robotic hand project, which aims to improve the life of someone who has muscle hypertrophy and cannot open their hand.">
+    <link rel="icon" type="image.png" sizes="32x32" href="static/logo.jpg">
+
+    <title>Robotic Hand</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <header id="header_contacts">
+        <nav>
+            <p>ARHAL</p>
+
+            <div class="info_container">
+                <img id="hamburguer" src="../static/icon-hamburger.svg" alt="icon-hamburger.svg">
+            </div>
+        </nav>
+
+        <div class="login">
+            <img src="../static/login_image.svg" alt="login_image.svg">
+
+            <h2>Login</h2>
+
+            <div class="inputs">
+                <input id="user" type="text" placeholder="Usuário" autocomplete="off">
+                <input id="password" type="password" placeholder="Senha" autocomplete="off">
+                <input id="btn_login" type="button" value="Login" onclick="setRoute()">
+            </div>
+        </div>
+
+        <h2 class="title_contacts">Lista de Contatos</h2>
+
+        <ul>
+            {% for contact in contact %}
+            <li class="contacts_container"><span class="contacts_counter">CORRIGIR</span>{{contact}}</li>
+            {% endfor %}
+        </ul>
+    </header>
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
