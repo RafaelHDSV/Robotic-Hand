@@ -8,6 +8,7 @@
 /* font-family: 'Marcellus', serif; */
 
 :root {
+    --white_clasic: #ffffff;
     --white: #f4f5f6;
     --gray: #d9d9d9;
     --dark_gray: #d3c4c4;
@@ -231,7 +232,7 @@ form button:hover {
     align-items: center;
     margin-bottom: 7.5rem;
     padding: 2rem;
-    background-color: white;
+    background-color: var(--white_clasic);
     border: 1px solid var(--pink);
 }
 
