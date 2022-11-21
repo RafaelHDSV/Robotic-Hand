@@ -30,7 +30,26 @@ window.addEventListener('load', () => {
         arrows: {
             prev: '.arrow_slide_prev',
             next: '.arrow_slide_next'
-        }
+        },
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 1260,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
     })
 })
 
