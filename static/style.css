@@ -346,8 +346,9 @@ form button:hover {
 
 .dots {
     position: absolute;
-    bottom: 7rem;
-    right: 47.5%;
+    bottom: 6rem;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .modal {
@@ -632,40 +633,6 @@ form button:hover {
     color: var(--black);
 }
 
-.container_secundary:last-of-type {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 0;
-}
-
-.container_secundary:last-of-type p {
-    text-align: center;
-}
-
-.btn_contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    border: none;
-    outline: 0;
-    background-color: var(--black);
-    color: var(--gray);
-    padding: 2rem;
-    margin: 2rem 0;
-    width: 25rem;
-    cursor: pointer;
-    transition: 1s all ease-in-out
-}
-
-.btn_contact:hover {
-    background-color: var(--gray);
-    color: var(--black);
-    border: 1px solid var(--black);
-}
-
 h3 {
     display: flex;
     flex-direction: column;
@@ -940,6 +907,7 @@ footer a {
     }
 
     .pink {
+        width: 100%;
         padding: 1.5rem 1.5rem 10rem 1.5rem;
         gap: 1.5rem;
     }
@@ -973,239 +941,26 @@ footer a {
     }
 
     .info_project {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0;
+        gap: 2rem;
         padding: 0;
     }
 
     .container_info {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         max-width: 30rem;
+        min-height: 16rem;
         width: 100%;
-        height: 16rem;
-        border-radius: 1rem;
-        padding: 2rem;
-        gap: 1.5rem;
-        border-top: .3rem solid var(--white);
-        background-color: var(--pink);
-        box-shadow: 7px 6px 47px -7px rgba(0, 0, 0, 0.3);
-    }
-
-    .container_info h2 {
-        font-size: 24px;
-        color: var(--gray);
-        border-color: var(--gray);
-    }
-
-    .container_info p {
-        text-align: center;
-        font-size: 21px;
-        color: var(--gray);
+        height: 100%;
+        gap: .5rem;
     }
 
     .middle {
-        display: flex;
-        flex-direction: column;
         gap: 2rem;
     }
 
-    .container_info:hover {
-        border-top: .3rem solid var(--pink);
-        background-color: var(--white);
-    }
-
-    .container_info:hover h2 {
-        color: var(--black);
-        border-color: var(--black);
-    }
-
-    .container_info:hover p {
-        color: var(--black);
-    }
-
-    .container_secundary:last-of-type {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 3rem 0;
-    }
-
-    .container_secundary:last-of-type p {
-        text-align: center;
-    }
-
-    .btn_contact {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px;
-        border: none;
-        outline: 0;
-        background-color: var(--black);
-        color: var(--gray);
-        padding: 2rem;
-        margin: 2rem 0;
-        width: 25rem;
-        cursor: pointer;
-        transition: 1s all ease-in-out
-    }
-
-    .btn_contact:hover {
-        background-color: var(--gray);
-        color: var(--black);
-        border: 1px solid var(--black);
-    }
-
     h3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Marcellus', serif;
-        text-transform: uppercase;
-        font-size: 26px;
-        text-align: center;
-        line-height: 5rem;
-        text-shadow: 0.15rem 0.15rem var(--dark_gray);
-        max-width: 40rem;
-        width: 100%;
-        color: var(--black);
-    }
-
-    h3 strong {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 48px;
-        text-align: center;
-        letter-spacing: 1rem;
-        color: var(--pink);
-        border-top: 2px solid var(--pink);
-        border-bottom: 2px solid var(--pink);
-    }
-
-    h3 strong:hover {
-        color: var(--dark_pink);
-        border-color: var(--dark_pink);
-        transform: scale(75%);
-        letter-spacing: normal;
-    }
-
-    model-viewer {
-        width: 40rem;
-        height: 40rem;
-    }
-
-    .container_form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-width: 100%;
-        min-height: 45rem;
-        padding: 3rem 0;
-        box-shadow: 15px 0px 25px 5px rgba(0, 0, 0, 0.2);
-        background-color: var(--pink);
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 3rem;
-        background-color: var(--pink);
-        color: var(--gray);
-    }
-
-    form input {
-        border: none;
-        outline: 0;
-        width: 100%;
-        border-radius: 1rem;
-        margin-top: .3rem;
-    }
-
-    form button {
-        border: none;
-        outline: 0;
-        padding: 1rem 0;
-        border-radius: 3rem;
-        background-color: var(--black);
-        color: var(--gray);
-        cursor: pointer;
-        transition: 1s all ease
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-        text-align: center;
-        background-color: var(--black);
-        color: var(--gray);
-        width: 100%;
-        height: 5rem;
-    }
-
-    footer a {
-        color: var(--pink);
-    }
-
-    /* CONTACTS */
-
-    #header_contacts {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-        min-height: 100vh;
-        background-color: var(--gray);
-        position: relative;
-        user-select: none;
-    }
-
-    .title_contacts {
-        padding: 10rem 0 1rem 0;
-    }
-
-    .contacts_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        background-color: var(--black);
-        color: var(--gray);
-        width: 60rem;
-        height: 5rem;
-        border-radius: 2rem;
-        margin-bottom: .5rem;
-        margin: 2rem 0;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .contacts_counter {
-        position: absolute;
-        left: 0;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 7rem;
-        background-color: var(--dark_pink);
-        color: var(--gray);
-        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        padding: 2rem 0;
     }
 }
