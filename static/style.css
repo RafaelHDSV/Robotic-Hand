@@ -894,18 +894,20 @@ footer a {
         align-items: center;
         min-width: 100%;
         min-height: 45rem;
-        padding: 3rem;
+        padding: 1rem;
         position: relative;
     }
 
     .container_main h2,
     .title_contacts {
         font-size: 24px;
+        margin-bottom: 3rem;
     }
 
     .container_primary {
         flex-direction: column;
-        padding: 1rem 1rem 5rem 1rem;
+        gap: 3rem;
+        padding: .5rem .5rem 10rem .5rem;
     }
 
     .container_primary p {
@@ -918,6 +920,7 @@ footer a {
     .container_primary p strong,
     .pink .container_secundary p strong {
         font-size: 20px;
+        text-shadow: 0.1rem 0.1rem var(--dark_pink);
     }
 
     .img_primary {
@@ -927,101 +930,55 @@ footer a {
     }
 
     .container_secundary {
-        position: relative;
-        width: 50%;
-        border-radius: 2rem;
-        padding: 3rem;
-        font-family: 'Montserrat Alternates', sans-serif;
-        font-size: 28px;
-        line-height: 3.5rem;
-        background-color: var(--pink);
-        color: var(--gray);
-        box-shadow: 0 0 20px 20px rgba(183, 113, 114, 0.51);
+        width: 100%;
+        font-size: 22px;
     }
 
     .container_secundary p strong,
     .pink p strong {
-        font-size: 38px;
-        color: var(--black);
-    }
-
-    .container_secundary:hover {
-        transform: scale(1.1);
+        font-size: 28px;
     }
 
     .pink {
-        box-shadow: 15px 0px 25px 5px rgba(0, 0, 0, 0.2);
-        background-color: var(--pink);
-        padding: 4rem 3rem 10rem 3rem;
+        padding: 1.5rem 1.5rem 10rem 1.5rem;
+        gap: 1.5rem;
     }
 
     .pink h2 {
         color: var(--gray);
         border-bottom: 1.5px solid var(--gray);
-    }
-
-    .pink h2:hover,
-    .container_info h2:hover {
-        color: var(--black);
-        border-bottom: 1.5px solid var(--black);
-        transform: scale(85%);
-        letter-spacing: normal;
-    }
-
-    .pink p {
-        color: var(--gray);
+        margin: 2rem 0 3rem 0;
     }
 
     .video_primary {
         display: flex;
+        width: 100%;
         background-color: var(--gray);
         border-radius: 12rem;
         padding: 2rem;
     }
 
     .video_primary iframe {
-        width: 50rem;
+        width: 100%;
         height: 27rem;
-        border: 2px solid var(--pink);
-        border-radius: 2rem;
-    }
-
-    .video_primary:hover {
-        transform: scale(1.07);
     }
 
     .pink .container_secundary {
-        background-color: var(--gray);
-        box-shadow: 0 0 20px 20px rgba(183, 113, 114, 0.51);
         z-index: 2;
     }
 
-    .pink .container_secundary p {
-        color: var(--black);
-    }
-
-    .pink .img_primary {
-        background-color: var(--gray);
-        margin: 0 3rem;
-    }
-
     .pink .img_primary img {
-        background-color: var(--white);
-        max-width: 70rem;
-        max-height: 40rem;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+        max-width: 60rem;
+        max-height: 30rem;
     }
 
     .info_project {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
-        padding: 5rem 0;
-        border-radius: 50rem;
+        gap: 0;
+        padding: 0;
     }
 
     .container_info {
