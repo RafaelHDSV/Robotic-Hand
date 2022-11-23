@@ -933,7 +933,7 @@ footer a {
     .container_main h2,
     .title_contacts {
         font-size: 24px;
-        margin-bottom: 3rem;
+        margin: 3rem 0;
     }
 
     .container_primary {
