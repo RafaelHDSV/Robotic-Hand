@@ -913,7 +913,7 @@ footer a {
         position: absolute;
         bottom: -20rem;
         min-width: 100%;
-        z-index: 1;
+        z-index: 0;
         user-select: none;
         padding: 0;
     }
@@ -946,6 +946,7 @@ footer a {
         font-size: 18px;
         padding: 0;
         order: 1;
+        line-height: 2.3rem;
     }
 
     .container_primary p strong,
