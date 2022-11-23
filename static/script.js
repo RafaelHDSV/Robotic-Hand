@@ -17,6 +17,7 @@ let re = /\S+@\S+\.\S+/;
 
 window.addEventListener('load', () => {
     preloader.classList.add('hide')
+    document.body.style.overflowY = 'visible'
 })
 
 window.addEventListener('load', () => {
@@ -32,7 +33,7 @@ window.addEventListener('load', () => {
             next: '.arrow_slide_next'
         },
         responsive: [{
-                breakpoint: 768,
+                breakpoint: 0,
                 settings: {
                     slidesToShow: 1
                 }

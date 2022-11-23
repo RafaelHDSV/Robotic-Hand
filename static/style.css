@@ -54,6 +54,7 @@ body {
     min-width: 100%;
     min-height: 100vh;
     background-color: var(--gray);
+    overflow-y: hidden;
 }
 
 .preloader {
@@ -316,6 +317,7 @@ form button:hover {
 }
 
 .card span {
+    display: block;
     position: absolute;
     left: 0;
     top: 0;
@@ -326,9 +328,12 @@ form button:hover {
 }
 
 .card p {
+    text-align: center;
     text-transform: uppercase;
     color: var(--black);
     border-bottom: 1px solid var(--black);
+    width: 60%;
+    margin: 0 2rem;
 }
 
 .card img {
@@ -406,6 +411,7 @@ form button:hover {
     align-items: center;
     min-width: 100%;
     min-height: 45rem;
+    width: 100%;
     padding: 3rem;
     position: relative;
 }
@@ -512,9 +518,17 @@ form button:hover {
 }
 
 .pink {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 100%;
+    min-height: 45rem;
+    width: 100%;
+    position: relative;
     box-shadow: 15px 0px 25px 5px rgba(0, 0, 0, 0.2);
     background-color: var(--pink);
-    padding: 4rem 3rem 10rem 3rem;
+    padding: 5rem 5rem 10rem 5rem;
 }
 
 .pink h2 {
@@ -539,11 +553,14 @@ form button:hover {
     background-color: var(--gray);
     border-radius: 12rem;
     padding: 2rem;
+    max-width: 50rem;
+    max-height: 27rem;
+    width: 50%;
+    height: 100vh;
 }
 
 .video_primary iframe {
-    width: 50rem;
-    height: 27rem;
+    width: 100%;
     border: 2px solid var(--pink);
     border-radius: 2rem;
 }
@@ -581,9 +598,10 @@ form button:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    width: 100%;
     gap: 3rem;
     padding: 5rem 0;
-    border-radius: 50rem;
 }
 
 .container_info {
@@ -591,9 +609,9 @@ form button:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    max-width: 30rem;
-    width: 100%;
-    height: 16rem;
+    width: 25rem;
+    min-height: 16rem;
+    height: 100%;
     border-radius: 1rem;
     padding: 2rem;
     gap: 1.5rem;
@@ -781,6 +799,29 @@ footer a {
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
+@media screen and (max-width: 1024px) {
+    model-viewer {
+        width: 100%;
+    }
+
+    .info_project {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+    }
+
+    .container_info {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: .5rem;
+    }
+
+    .middle {
+        gap: 2rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .preloader {
         display: flex;
@@ -834,6 +875,8 @@ footer a {
         position: relative;
         z-index: 1;
         user-select: none;
+        height: 100%;
+        padding-bottom: 5rem;
     }
 
     .card {
@@ -854,6 +897,25 @@ footer a {
         text-transform: uppercase;
         color: var(--black);
         border-bottom: 1px solid var(--black);
+    }
+
+    .arrow_slide_next,
+    .arrow_slide_prev {
+        display: none;
+    }
+
+    .dots {
+        width: 100%;
+    }
+
+    .svg_container_slide {
+        display: flex;
+        position: absolute;
+        bottom: -20rem;
+        min-width: 100%;
+        z-index: 1;
+        user-select: none;
+        padding: 0;
     }
 
     .container_main {
@@ -899,8 +961,10 @@ footer a {
     }
 
     .container_secundary {
+        padding: 2rem;
         width: 100%;
-        font-size: 22px;
+        line-height: 1.5rem;
+        font-size: 14px;
     }
 
     .container_secundary p strong,
@@ -951,10 +1015,7 @@ footer a {
     .container_info {
         justify-content: center;
         align-items: center;
-        max-width: 30rem;
-        min-height: 16rem;
         width: 100%;
-        height: 100%;
         gap: .5rem;
     }
 
