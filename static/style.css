@@ -337,6 +337,7 @@ form button:hover {
     background-color: var(--white);
     box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.2);
     object-fit: contain;
+    cursor: zoom-in;
 }
 
 .card img:hover {
@@ -669,9 +670,10 @@ h3 strong:hover {
     letter-spacing: normal;
 }
 
+/* CORRIGIR */
 model-viewer {
-    width: 40rem;
     height: 40rem;
+    width: 30rem;
 }
 
 .container_form {
