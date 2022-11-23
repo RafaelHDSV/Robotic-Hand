@@ -911,11 +911,12 @@ footer a {
     .svg_container_slide {
         display: flex;
         position: absolute;
-        bottom: -20rem;
+        bottom: -18.5rem;
         min-width: 100%;
-        z-index: 0;
+        height: 43rem;
+        z-index: 1;
         user-select: none;
-        padding: 0;
+        object-fit: cover;
     }
 
     .container_main {
