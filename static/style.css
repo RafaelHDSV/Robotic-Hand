@@ -309,6 +309,7 @@ form button:hover {
     align-items: center;
     width: 5rem;
     min-height: 31rem;
+    max-height: 33rem;
     border-radius: 1rem;
     margin: 3rem;
     background-color: var(--gray);
@@ -801,6 +802,87 @@ footer a {
 }
 
 @media screen and (max-width: 1024px) {
+    .qr_code {
+        opacity: 0;
+    }
+
+    .container_main a {
+        display: flex;
+        z-index: 3;
+    }
+
+    .container_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: 100%;
+        min-height: 45rem;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .container_main h2,
+    .title_contacts {
+        font-size: 24px;
+        margin: 3rem 0;
+    }
+
+    .container_primary {
+        flex-direction: column;
+        gap: 3rem;
+        padding: .5rem .5rem 10rem .5rem;
+    }
+
+    .container_primary p {
+        width: 100%;
+        font-size: 18px;
+        padding: 0;
+        order: 1;
+        line-height: 2.3rem;
+    }
+
+    .container_primary p strong,
+    .pink .container_secundary p strong {
+        font-size: 20px;
+        text-shadow: 0.1rem 0.1rem var(--dark_pink);
+    }
+
+    .img_primary {
+        width: 100%;
+        padding: 0;
+        order: 2;
+    }
+
+    .container_secundary {
+        padding: 2rem;
+        width: 100%;
+        line-height: 1.5rem;
+        font-size: 14px;
+    }
+
+    .container_secundary p strong,
+    .pink p strong {
+        font-size: 28px;
+    }
+
+    .pink {
+        width: 100%;
+        padding: 1.5rem 1.5rem 10rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .pink h2 {
+        color: var(--gray);
+        border-bottom: 1.5px solid var(--gray);
+        margin: 2rem 0 3rem 0;
+    }
+
+    .container_secundary p {
+        font-size: 22px;
+        line-height: 2rem;
+    }
+
     model-viewer {
         width: 100%;
     }
@@ -808,7 +890,7 @@ footer a {
     .info_project {
         flex-direction: column;
         gap: 2rem;
-        padding: 0;
+        padding: 3rem 0;
     }
 
     .container_info {
@@ -816,6 +898,14 @@ footer a {
         align-items: center;
         width: 100%;
         gap: .5rem;
+    }
+
+    .container_info h2 {
+        font-size: 18px;
+    }
+
+    .container_info p {
+        font-size: 18px;
     }
 
     .middle {
@@ -1021,6 +1111,7 @@ footer a {
         align-items: center;
         width: 100%;
         gap: .5rem;
+        font-size: 20px;
     }
 
     .middle {
