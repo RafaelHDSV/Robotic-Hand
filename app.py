@@ -6,7 +6,7 @@ contact = []
 
 
 @app.route("/", methods=['GET', 'POST'])
-def home():
+def showHome():
     if request.method == 'POST':
         name = request.form['name']
         email = request.form['email']
@@ -24,6 +24,11 @@ def write_file(name, email, phone):
 @app.route('/contacts')
 def showContacts():
     return render_template('contacts.html', contact=contact)
+
+
+@app.route('/website')
+def showWebsite():
+    return render_template('website.html')
 
 
 if __name__ == "__main__":

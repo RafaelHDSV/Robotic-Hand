@@ -148,7 +148,8 @@ h3 strong,
 .video_primary,
 .container_info,
 .container_info h2,
-.container_info p {
+.container_info p,
+.call_form {
     cursor: pointer;
     transition: .5s all ease;
 }
@@ -456,7 +457,8 @@ form button:hover {
 }
 
 .container_primary p strong,
-.pink .container_secundary p strong {
+.pink .container_secundary p strong,
+.call_form p strong {
     font-size: 38px;
     color: var(--pink);
     text-shadow: 0.15rem 0.15rem var(--dark_pink);
@@ -593,6 +595,80 @@ form button:hover {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.call_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50%;
+    min-height: 30rem;
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+    padding: 3rem;
+    margin: 3rem 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 28px;
+    line-height: 3.5rem;
+    background-color: var(--gray);
+    color: var(--pink);
+    border: 2px solid var(--pink);
+    box-shadow: 0 0 7px 7px rgba(183, 113, 114, 0.51);
+}
+
+.call_form:hover {
+    background-color: var(--pink);
+    color: var(--gray);
+    transform: scale(1.1);
+}
+
+.call_form:hover p strong {
+    font-size: 38px;
+    color: var(--dark_gray);
+    text-shadow: 0.15rem 0.15rem var(--black);
+}
+
+.call_form img {
+    width: 50%;
+}
+
+.text_call {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 2rem;
+}
+
+.text_call p {
+    text-align: justify;
+    font-size: 28px;
+}
+
+.call_form a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 4rem;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem 0;
+    border-radius: 3rem;
+    background-color: var(--black);
+    color: var(--gray);
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1s all ease
+}
+
+.call_form a:hover {
+    background-color: var(--gray);
+    color: var(--black);
+    border: 2px solid var(--black);
 }
 
 .info_project {
@@ -772,6 +848,7 @@ footer a {
 }
 
 .contacts_container {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -783,7 +860,6 @@ footer a {
     border-radius: 2rem;
     margin-bottom: .5rem;
     margin: 2rem 0;
-    position: relative;
     overflow: hidden;
 }
 
@@ -799,6 +875,23 @@ footer a {
     background-color: var(--dark_pink);
     color: var(--gray);
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    overflow: hidden;
+}
+
+.contacts_counter:last-child {
+    position: absolute;
+    left: calc(100% - 7rem);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 7rem;
+    background-color: var(--dark_pink);
+    color: var(--gray);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    overflow: hidden;
+    transform: rotate(180deg);
 }
 
 @media screen and (max-width: 1024px) {

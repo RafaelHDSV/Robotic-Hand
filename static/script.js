@@ -10,10 +10,7 @@ let close = document.querySelector('.close')
 let logo = document.querySelector('.logo')
 let qrCode = document.querySelector('.qr_code')
 let closeQrCode = document.querySelector('.close_qr_code')
-
-// CORRIGIR
-let emailForm = document.getElementById('email')
-let re = /\S+@\S+\.\S+/;
+let contactsCounter = document.querySelector('.contacts_counter')
 
 window.addEventListener('load', () => {
     preloader.classList.add('hide')
@@ -87,9 +84,13 @@ function setRoute() {
     if ((user.value == 'admin' || user.value == 'ADMIN' || user.value == 'Admin') && (password.value ==
             'admin' || password.value == 'ADMIN' || password.value == 'Admin')) {
         window.location.href = '/contacts'
+        contactsCounter.innerHTML = '1'
     } else if ((user.value == 'user' || user.value == 'USER' || user.value == 'User') && (password.value ==
             'user' || password.value == 'USER' || password.value == 'User')) {
         window.location.href = '/'
+    } else if ((user.value == 'website' || user.value == 'WEBSITE' || user.value == 'Website') && (password.value ==
+            'website' || password.value == 'WEBSITE' || password.value == 'Website')) {
+        window.location.href = '/website'
     } else {
         user.setAttribute('placeholder', 'Digite um login válido!')
         password.setAttribute('placeholder', 'Digite um login válido!')

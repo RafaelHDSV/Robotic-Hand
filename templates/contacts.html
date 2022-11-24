@@ -45,7 +45,11 @@
 
         <ul>
             {% for contact in contact %}
-            <li class="contacts_container"><span class="contacts_counter">{{number}}</span>{{contact}}</li>
+            <li class="contacts_container">
+                <span class="contacts_counter"></span>
+                {{contact}}
+                <span class="contacts_counter"></span>
+            </li>
             {% endfor %}
         </ul>
     </header>
