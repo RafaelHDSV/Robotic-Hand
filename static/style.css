@@ -1004,6 +1004,36 @@ footer a {
     .middle {
         gap: 2rem;
     }
+
+    .call_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        min-height: 30rem;
+        width: 100%;
+        height: auto;
+        border-radius: 2rem;
+        padding: 1.5rem;
+        margin: 3rem 0;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 28px;
+        line-height: 3.5rem;
+        background-color: var(--gray);
+        color: var(--pink);
+        border: 2px solid var(--pink);
+        box-shadow: 0 0 7px 7px rgba(183, 113, 114, 0.51);
+    }
+
+    .text_call {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1217,6 +1247,24 @@ footer a {
     }
 
     h3 strong {
+        font-size: 23px;
+    }
+
+    .text_call {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .text_call p {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .call_form p strong {
         font-size: 23px;
     }
 }
