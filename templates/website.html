@@ -20,35 +20,43 @@
 </head>
 
 <body>
-    <header id="header_contacts">
-        <nav>
-            <p>ARHAL</p>
+    <div class="preloader">
+        <img src="../static/preloader.gif" alt="preloader.gif">
+    </div>
 
-            <div class="info_container">
-                <img id="hamburguer" src="../static/icon-hamburger.svg" alt="icon-hamburger.svg">
-            </div>
-        </nav>
+    <nav>
+        <p>ARHAL</p>
 
-        <div class="login">
-            <img src="../static/login_image.svg" alt="login_image.svg">
-
-            <h2>Login</h2>
-
-            <div class="inputs">
-                <input id="user" type="text" placeholder="Usuário" autocomplete="off">
-                <input id="password" type="password" placeholder="Senha" autocomplete="off">
-                <input id="btn_login" type="button" value="Login" onclick="setRoute()">
-            </div>
+        <div class="info_container">
+            <img id="hamburguer" src="../static/icon-hamburger.svg" alt="icon-hamburger.svg">
         </div>
+    </nav>
 
-        <h2 class="title_contacts">Website</h2>
+    <div class="login">
+        <img src="../static/login_image.svg" alt="login_image.svg">
 
-        <!-- CORRIGIR -->
-        <div class="container_primary">
-            <img src="../static/logo.jpg" alt="">
-            <img src="../static/logo.jpg" alt="">
+        <h2>Login</h2>
+
+        <div class="inputs">
+            <input id="user" type="text" placeholder="Usuário" autocomplete="off">
+            <input id="password" type="password" placeholder="Senha" autocomplete="off">
+            <input id="btn_login" type="button" value="Login" onclick="setRoute()">
         </div>
-    </header>
+    </div>
+
+    <h2 class="title_contacts">Website</h2>
+
+    <div>
+        <p class="paragraph_website">Como fizemos a parte do Python</p>
+
+        <img class="img_website" src="../static/python.png" alt="python.png">
+    </div>
+
+    <div>
+        <p class="paragraph_website">O Html</p>
+
+        <img class="img_website" src="../static/contacts_html.png" alt="contacts_html.png">
+    </div>
 
     <script src="../static/script.js"></script>
 </body>

@@ -20,39 +20,41 @@
 </head>
 
 <body>
-    <header id="header_contacts">
-        <nav>
-            <p>ARHAL</p>
+    <div class="preloader">
+        <img src="../static/preloader.gif" alt="preloader.gif">
+    </div>
 
-            <div class="info_container">
-                <img id="hamburguer" src="../static/icon-hamburger.svg" alt="icon-hamburger.svg">
-            </div>
-        </nav>
+    <nav>
+        <p>ARHAL</p>
 
-        <div class="login">
-            <img src="../static/login_image.svg" alt="login_image.svg">
-
-            <h2>Login</h2>
-
-            <div class="inputs">
-                <input id="user" type="text" placeholder="Usuário" autocomplete="off">
-                <input id="password" type="password" placeholder="Senha" autocomplete="off">
-                <input id="btn_login" type="button" value="Login" onclick="setRoute()">
-            </div>
+        <div class="info_container">
+            <img id="hamburguer" src="../static/icon-hamburger.svg" alt="icon-hamburger.svg">
         </div>
+    </nav>
 
-        <h2 class="title_contacts">Lista de Contatos</h2>
+    <div class="login">
+        <img src="../static/login_image.svg" alt="login_image.svg">
 
-        <ul>
-            {% for contact in contact %}
-            <li class="contacts_container">
-                <span class="contacts_counter"></span>
-                {{contact}}
-                <span class="contacts_counter"></span>
-            </li>
-            {% endfor %}
-        </ul>
-    </header>
+        <h2>Login</h2>
+
+        <div class="inputs">
+            <input id="user" type="text" placeholder="Usuário" autocomplete="off">
+            <input id="password" type="password" placeholder="Senha" autocomplete="off">
+            <input id="btn_login" type="button" value="Login" onclick="setRoute()">
+        </div>
+    </div>
+
+    <h2 class="title_contacts">Lista de Contatos</h2>
+
+    <ul class="contacts_list">
+        {% for contact in contact %}
+        <li class="contacts_container">
+            <span class="contacts_counter"></span>
+            {{contact}}
+            <span class="contacts_counter"></span>
+        </li>
+        {% endfor %}
+    </ul>
 
     <script src="../static/script.js"></script>
 </body>

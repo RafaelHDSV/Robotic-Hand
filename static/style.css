@@ -612,14 +612,14 @@ form button:hover {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 28px;
     line-height: 3.5rem;
-    background-color: var(--gray);
+    background-color: var(--dark_gray);
     color: var(--pink);
     border: 2px solid var(--pink);
     box-shadow: 0 0 7px 7px rgba(183, 113, 114, 0.51);
 }
 
 .call_form:hover {
-    background-color: var(--pink);
+    background-color: var(--dark_pink);
     color: var(--gray);
     transform: scale(1.1);
 }
@@ -831,18 +831,6 @@ footer a {
 
 /* CONTACTS */
 
-#header_contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    background-color: var(--gray);
-    position: relative;
-    user-select: none;
-}
-
 .title_contacts {
     padding: 10rem 0 1rem 0;
 }
@@ -892,6 +880,25 @@ footer a {
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     overflow: hidden;
     transform: rotate(180deg);
+}
+
+/* WEBSITE */
+.paragraph_website {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Marcellus', serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 5rem;
+    text-shadow: 0.15rem 0.15rem var(--dark_gray);
+    color: var(--black);
+}
+
+.img_website {
+    width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
