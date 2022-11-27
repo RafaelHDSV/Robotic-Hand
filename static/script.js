@@ -64,16 +64,6 @@ hamburguer.addEventListener('click', () => {
     if (loginContainer.style.display == 'flex') {
         loginContainer.style.display = 'none'
         loginContainer.style.opacity = '0'
-
-        // CORRIGIR
-        if (hamburguer.style.filter ==
-            'invert(20%) sepia(12%) saturate(16%) hue-rotate(334deg) brightness(37%) contrast(94%)') {
-            if (window.location.pathname == ('/contacts')) {
-                window.location.href = '/'
-            } else {
-                window.location.href = '/contacts'
-            }
-        }
     } else {
         loginContainer.style.display = 'flex'
         loginContainer.style.opacity = '1'

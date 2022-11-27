@@ -671,6 +671,20 @@ form button:hover {
     border: 2px solid var(--black);
 }
 
+.card_how {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 31rem;
+    max-height: 33rem;
+    border-radius: 1rem;
+    background-color: var(--gray);
+    user-select: none;
+    position: relative;
+}
+
 .info_project {
     display: flex;
     flex-direction: row;
@@ -766,7 +780,6 @@ h3 strong:hover {
     letter-spacing: normal;
 }
 
-/* CORRIGIR */
 model-viewer {
     height: 40rem;
     width: 30rem;
