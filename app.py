@@ -2,11 +2,16 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 contact = []
+number = 0
+# CORRIGIR
+# numberList = []
 
 
 @app.route("/", methods=['GET', 'POST'])
 def showHome():
     if request.method == 'POST':
+        global number
+        number += 1
         name = request.form['name']
         email = request.form['email']
         phone = request.form['phone']
@@ -22,7 +27,7 @@ def write_file(name, email, phone):
 
 @app.route('/contacts')
 def showContacts():
-    return render_template('contacts.html', contact=contact)
+    return render_template('contacts.html', contact=contact, number=number)
 
 
 @app.route('/website')

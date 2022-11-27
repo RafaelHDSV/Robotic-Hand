@@ -879,7 +879,7 @@ footer a {
     overflow: hidden;
 }
 
-.contacts_counter:last-child {
+/* .contacts_counter:last-child {
     position: absolute;
     left: calc(100% - 7rem);
     top: 0;
@@ -893,7 +893,7 @@ footer a {
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     overflow: hidden;
     transform: rotate(180deg);
-}
+} */
 
 /* WEBSITE */
 .paragraph_website {

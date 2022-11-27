@@ -25,7 +25,7 @@
     </div>
 
     <nav>
-        <p>ARHAL</p>
+        <p class="name_main">ARHAL</p>
 
         <div class="info_container">
             <img id="hamburguer" src="../static/icon-hamburger.svg" alt="icon-hamburger.svg">
@@ -49,9 +49,11 @@
     <ul class="contacts_list">
         {% for contact in contact %}
         <li class="contacts_container">
-            <span class="contacts_counter"></span>
+            <span class="contacts_counter">
+                {{number}}
+            </span>
             {{contact}}
-            <span class="contacts_counter"></span>
+            <!-- <span class="contacts_counter"></span> -->
         </li>
         {% endfor %}
     </ul>

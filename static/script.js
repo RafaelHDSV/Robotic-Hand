@@ -11,6 +11,7 @@ let logo = document.querySelector('.logo')
 let qrCode = document.querySelector('.qr_code')
 let closeQrCode = document.querySelector('.close_qr_code')
 let contactsCounter = document.querySelector('.contacts_counter')
+let nameMain = document.querySelector('.name_main')
 
 window.addEventListener('load', () => {
     preloader.classList.add('hide')
@@ -51,6 +52,10 @@ window.addEventListener('load', () => {
     })
 })
 
+nameMain.addEventListener('click', () => {
+    window.location.href = '/'
+})
+
 hamburguer.addEventListener('mouseenter', () => {
     hamburguer.style.filter =
         'invert(20%) sepia(12%) saturate(16%) hue-rotate(334deg) brightness(37%) contrast(94%)'
@@ -74,7 +79,6 @@ function setRoute() {
     if ((user.value == 'admin' || user.value == 'ADMIN' || user.value == 'Admin') && (password.value ==
             'admin' || password.value == 'ADMIN' || password.value == 'Admin')) {
         window.location.href = '/contacts'
-        contactsCounter.innerHTML = '1'
     } else if ((user.value == 'user' || user.value == 'USER' || user.value == 'User') && (password.value ==
             'user' || password.value == 'USER' || password.value == 'User')) {
         window.location.href = '/'
@@ -85,6 +89,10 @@ function setRoute() {
         user.setAttribute('placeholder', 'Digite um login válido!')
         password.setAttribute('placeholder', 'Digite um login válido!')
     }
+}
+
+if (contactsCounter.display != 'none') {
+    contactsCounter.innerHTML = contactsCounter.innerHTML
 }
 
 for (let i = 0; i < imageCard.length; i++) {
