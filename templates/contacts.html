@@ -46,17 +46,32 @@
 
     <h2 class="title_contacts">Lista de Contatos</h2>
 
-    <ul class="contacts_list">
-        {% for contact in contact %}
-        <li class="contacts_container">
-            <span class="contacts_container">
-                {{number}}
-            </span>
-            {{contact}}
-            <!-- <span class="contacts_counter"></span> -->
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="list">
+        <ul class="contacts_list">
+            {% for numberList in numberList %}
+            <li class="contacts_counter">
+                {{numberList}}
+            </li>
+            {% endfor %}
+        </ul>
+
+        <ul class="contacts_list">
+            {% for contact in contact %}
+            <li class="contacts_container">
+                {{contact}}
+            </li>
+            {% endfor %}
+        </ul>
+
+        <ul class="contacts_list">
+            {% for numberList in numberList %}
+            <li class="contacts_counter">
+                <label id="check_label" for="check"></label>
+                <input type="checkbox" name="check" id="check">
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 
     <script src="../static/script.js"></script>
 </body>

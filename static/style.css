@@ -12,6 +12,8 @@
     --white: #f4f5f6;
     --gray: #d9d9d9;
     --dark_gray: #d3c4c4;
+    --green: #65fa65;
+    --red: #fd2e2e;
     --pink: #e9878b;
     --dark_pink: #b77172;
     --black: #363636;
@@ -149,7 +151,9 @@ h3 strong,
 .container_info,
 .container_info h2,
 .container_info p,
-.call_form {
+.call_form,
+.contacts_counter,
+.contacts_counter input {
     cursor: pointer;
     transition: .5s all ease;
 }
@@ -671,41 +675,6 @@ form button:hover {
     border: 2px solid var(--black);
 }
 
-/* CORRIGIR */
-/* .slider-container_how {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 300px;
-    overflow: hidden;
-    cursor: grab;
-}
-
-.slider_how {
-    position: absolute;
-    display: flex;
-    width: auto;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    we have 10 imgs so repeat 10 times 1 fr
-    column-gap: 2rem;
-    pointer-events: none;
-}
-
-.slider-item_how {
-    width: 300px;
-    height: 100%;
-}
-
-.slider-item_how img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    user-select: none;
-} */
-
 .info_project {
     display: flex;
     flex-direction: row;
@@ -869,8 +838,12 @@ footer a {
     padding: 10rem 0 1rem 0;
 }
 
+.list {
+    display: flex;
+    gap: 1.5rem;
+}
+
 .contacts_container {
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -883,38 +856,45 @@ footer a {
     margin-bottom: .5rem;
     margin: 2rem 0;
     overflow: hidden;
+    position: relative;
 }
 
 .contacts_counter {
-    position: absolute;
-    left: 0;
-    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 7rem;
+    height: 5rem;
+    width: 5rem;
+    margin: 2rem 0;
     background-color: var(--dark_pink);
     color: var(--gray);
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    overflow: hidden;
+    border-radius: 50%;
+    font-size: 20px;
 }
 
-/* .contacts_counter:last-child {
+.contacts_counter input {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--red);
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.contacts_counter input:checked {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--green);
+}
+
+.contacts_counter label {
     position: absolute;
-    left: calc(100% - 7rem);
-    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 7rem;
-    background-color: var(--dark_pink);
-    color: var(--gray);
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    overflow: hidden;
-    transform: rotate(180deg);
-} */
+    z-index: 1;
+}
 
 /* WEBSITE */
 .paragraph_website {
