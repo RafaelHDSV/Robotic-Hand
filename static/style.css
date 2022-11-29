@@ -916,6 +916,10 @@ footer a {
 }
 
 @media screen and (max-width: 1024px) {
+    .contacts_counter {
+        display: none;
+    }
+
     .qr_code {
         opacity: 0;
     }
