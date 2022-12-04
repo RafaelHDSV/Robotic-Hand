@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: http://robotic-hand.herokuapp.com
+- Live Site URL: https://robotic-hand.onrender.com
 
 ### Screenshot
 
