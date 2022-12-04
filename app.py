@@ -14,19 +14,19 @@ def showHome():
         name = request.form['name']
         email = request.form['email']
         phone = request.form['phone']
-        write_file(name, email, phone)
+        # write_file(name, email, phone)
     return render_template('index.html')
 
 
-def write_file(name, email, phone):
-    global number
-    numberTxt = str(number)
+# def write_file(name, email, phone):
+#     global number
+#     numberTxt = str(number)
 
-    if request.form['name'] != '' and request.form['email'] != '' and request.form['phone'] != '':
-        contact.append(
-            f"Nome: {name} | Email: {email} | Telefone: {phone}")
+#     if request.form['name'] != '' and request.form['email'] != '' and request.form['phone'] != '':
+#         contact.append(
+#             f"Nome: {name} | Email: {email} | Telefone: {phone}")
 
-    numberList.append(f"{numberTxt}")
+#     numberList.append(f"{numberTxt}")
 
 
 @app.route('/contacts')
