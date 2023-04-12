@@ -17,6 +17,7 @@
         :root {
             --green: #dde7de;
             --dark_green: #1e6d46;
+            --light_green: #6dff7b;
             --red: #900020;
             --black: #2F3B4C;
         }
@@ -56,10 +57,23 @@
             font-size: 22px;
         }
 
-        .logo {
-            max-width: 35rem;
-            width: 100%;
-            transform: rotate(-5deg);
+        .btn_neon {
+            position: relative;
+            background-color: transparent;
+            color: var(--light_green);
+            font-family: 'open_sansregular';
+            font-size: 128px;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-shadow: 0 0 0.125em rgba(0, 0, 0, 0.5), 0 0 0.25em currentColor;
+            transition: .5s;
+            cursor: pointer;
+        }
+
+        .btn_neon:hover {
+            color: var(--green);
+            transition: 0.4s;
+            text-shadow: none;
         }
     </style>
 </head>
@@ -75,6 +89,8 @@
         </nav> -->
 
         <!-- <img class="logo" src="images/marg.png" alt="marg.png"> -->
+
+        <a class="btn_neon">Marg</a>
     </header>
 </body>
 
