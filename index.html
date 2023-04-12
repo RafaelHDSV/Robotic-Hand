@@ -43,11 +43,23 @@
             top: 0;
             left: 0;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             background-color: var(--black);
+            color: var(--green);
             width: 100vw;
             height: 5rem;
+        }
+
+        nav p {
+            font-weight: bolder;
+            font-size: 22px;
+        }
+
+        .logo {
+            max-width: 35rem;
+            width: 100%;
+            transform: rotate(-5deg);
         }
     </style>
 </head>
@@ -55,10 +67,14 @@
 <body>
     <header>
         <nav>
-
+            <p>Marg</p>
+            <p>Marg</p>
+            <p>Marg</p>
+            <p>Marg</p>
+            <p>Marg</p>
         </nav>
 
-        <img src="images/marg.png" alt="marg.png">
+        <img class="logo" src="images/marg.png" alt="marg.png">
     </header>
 
     <div class="1">
