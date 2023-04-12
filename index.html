@@ -17,8 +17,6 @@
         :root {
             --green: #dde7de;
             --dark_green: #1e6d46;
-            --light_green: #6dff7b;
-            --red: #900020;
             --black: #2F3B4C;
         }
 
@@ -26,6 +24,16 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+
+            /* GRADIENTE Q PARECE PADRAO */
+            background: linear-gradient(var(--black) 70%, var(--green));
         }
     </style>
 </head>
