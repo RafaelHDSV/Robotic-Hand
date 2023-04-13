@@ -20,8 +20,9 @@
         }
 
         :root {
-            --orange: #DB504A;
+            --white: #F4FFF8;
             --green: #dde7de;
+            --orange: #DB504A;
             --dark_green: #1e6d46;
             --black: #212431;
         }
@@ -40,10 +41,29 @@
             background-color: var(--black);
         }
 
-        nav span {
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 7rem;
+            padding: 0 3.5rem;
+            color: var(--white);
+        }
+
+        .logo_txt {
             font-family: 'The Seasons';
             font-size: 43px;
-            color: var(--green);
+            color: var(--white);
+            letter-spacing: .3rem;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 50%;
         }
     </style>
 </head>
@@ -51,7 +71,14 @@
 <body>
     <header>
         <nav>
-            <span>MARG</span>
+            <span class="logo_txt">MARG</span>
+
+            <div class="options">
+                <span>Option</span>
+                <span>Option</span>
+                <span>Option</span>
+                <span>Option</span>
+            </div>
         </nav>
 
 
