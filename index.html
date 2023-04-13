@@ -19,6 +19,9 @@
             src: url('fonts/Fontspring-DEMO-theseasons-bd.otf');
         }
 
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;500;900&display=swap');
+        /* font-family: 'Barlow Semi Condensed', sans-serif; */
+
         :root {
             --white: #F4FFF8;
             --green: #dde7de;
@@ -36,26 +39,34 @@
         header {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             height: 100vh;
-            background-color: var(--black);
+            background-color: var(--green);
+            position: relative;
         }
 
         nav {
+            position: absolute;
+            top: 0;
+            left: 0;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
             height: 7rem;
             padding: 0 3.5rem;
-            color: var(--white);
+            color: var(--black);
         }
 
         .logo_txt {
             font-family: 'The Seasons';
             font-size: 43px;
-            color: var(--white);
+            color: var(--black);
             letter-spacing: .3rem;
+            user-select: none;
         }
 
         .options {
@@ -63,7 +74,37 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            font-size: 20px;
             width: 50%;
+        }
+
+        .options span {
+            padding: .5rem 0 .3rem 0;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-weight: 500;
+            user-select: none;
+            cursor: pointer;
+            transition: .5s all ease;
+        }
+
+        .options span:hover {
+            color: var(--dark_green);
+        }
+
+        .main_header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            font-size: 22px;
+            max-width: 20rem;
         }
     </style>
 </head>
@@ -81,7 +122,19 @@
             </div>
         </nav>
 
+        <div class="main_header">
+            <img src="images/marg.png" alt="marg.png">
 
+            <div class="text">
+                <h2>MARG</h2>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo praesentium saepe voluptates
+                    laudantium
+                    quaerat possimus, debitis nam, dolores, repudiandae temporibus beatae. Aliquid eaque consectetur
+                    impedit
+                    ab quam pariatur. Ducimus, odit.</p>
+            </div>
+        </div>
     </header>
 </body>
 
