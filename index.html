@@ -34,6 +34,7 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            text-decoration: none;
         }
 
         header {
@@ -79,6 +80,7 @@
 
         .options a {
             padding: .5rem 0 .3rem 0;
+            color: var(--black);
             font-family: 'Barlow Semi Condensed', sans-serif;
             font-weight: 500;
             user-select: none;
@@ -119,6 +121,7 @@
             gap: 3rem;
             background: linear-gradient(var(--green), var(--white));
             height: 95vh;
+            padding: 3.5rem;
         }
 
         .arduino .main_container img {
@@ -150,7 +153,7 @@
             <span class="logo_txt">MARG</span>
 
             <div class="options">
-                <a>Option</a>
+                <a href="#esp_32">ESP 32</a>
                 <a>Option</a>
                 <a>Option</a>
                 <a>Option</a>
@@ -172,7 +175,7 @@
         </div>
     </header>
 
-    <div class="arduino">
+    <div class="arduino" id="esp_32">
         <h2>ESP 32</h2>
 
         <div class="main_container">
