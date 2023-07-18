@@ -12,10 +12,10 @@ let qrCode = document.querySelector('.qr_code')
 let closeQrCode = document.querySelector('.close_qr_code')
 let nameMain = document.querySelector('.name_main')
 
-// window.addEventListener('load', () => {
-//     preloader.classList.add('hide')
-//     document.body.style.overflowY = 'visible'
-// })
+window.addEventListener('load', () => {
+    preloader.classList.add('hide')
+    document.body.style.overflowY = 'visible'
+})
 
 window.addEventListener('load', () => {
     new Glider(document.querySelector('.glider'), {

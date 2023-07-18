@@ -81,36 +81,30 @@ body {
     min-width: 100%;
     min-height: 100vh;
     background-color: var(--light_gray);
-    /* TROQUE */
-    /* LOADER */
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
-/* TROQUE */
-/* .preloader {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--light_gray);
-            position: fixed;
-            height: 100vh;
-            width: 100%;
-            z-index: 3;
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light_gray);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 3;
+}
 
-            opacity: 0;
-            visibility: hidden;
-        }
+.hide {
+    animation: hide .5s forwards;
+}
 
-        .hide {
-            animation: hide .5s forwards;
-        }
-
-        @keyframes hide {
-            100% {
-                opacity: 0;
-                visibility: hidden;
-            }
-        } */
+@keyframes hide {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 
 header {
     display: flex;
@@ -166,11 +160,12 @@ nav {
 .name_main:hover,
 .info:hover {
     color: var(--black);
+    font-weight: bold;
     transform: scale(110%);
 }
 
 .logo:hover {
-    animation: logoAnimation .7s alternate infinite;
+    animation: logoAnimation .5s alternate infinite;
 }
 
 @keyframes logoAnimation {
