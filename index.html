@@ -82,7 +82,7 @@
             /* overflow-y: hidden; */
         }
 
-         /* TROQUE */
+        /* TROQUE */
         /* .preloader {
             display: flex;
             justify-content: center;
@@ -132,8 +132,8 @@
             background-color: var(--green);
             color: var(--light_gray);
             padding: 2rem 3rem;
-             /* TROQUE */
-            box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+            /* TROQUE */
+            box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.5);
 
             z-index: 1;
         }
@@ -174,7 +174,6 @@
         #hamburguer,
         .arrow_slide,
         .logo,
-        .arrow,
         h3 strong,
         .card p,
         .card img,
@@ -186,87 +185,26 @@
         .video_primary,
         .container_info,
         .container_info h2,
-        .container_info p,
-        .call_form,
-        .contacts_counter,
-        .contacts_counter input {
+        .container_info p {
             cursor: pointer;
             transition: .5s all ease;
         }
 
-        .login {
-            display: none;
-            opacity: 0;
-            flex-direction: column;
-            align-items: center;
-            position: absolute;
-            top: 0;
-            right: 0;
-            background-color: var(--dark_green);
-            color: var(--light_gray);
-            font-size: 18px;
-            height: 100vh;
-            width: 20rem;
-            gap: 3rem;
-            padding: 7rem;
-            z-index: 0;
+        .logo:hover {
+            animation: logoAnimation .7s alternate infinite;
         }
 
-        .login img {
-            width: 15rem;
-        }
-
-        .login .inputs {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: .5rem;
-        }
-
-        .login .inputs input,
-        form input {
-            border: none;
-            outline: 0;
-            background-color: var(--black);
-            color: var(--light_gray);
-            padding: 1rem;
-            width: 15rem;
-            cursor: pointer;
-            transition: 1s all ease
-        }
-
-        .login .inputs input:nth-child(1)::selection,
-        .login .inputs input:nth-child(1):not(:placeholder-shown),
-        .login .inputs input:nth-child(2):not(:placeholder-shown),
-        .login .inputs input:nth-child(3):hover,
-        form input:not(:placeholder-shown),
-        form button:hover {
-            background-color: var(--light_gray);
-            color: var(--black);
-        }
-
-        @keyframes arrowAnimation {
-            from {
-                top: -10px;
+        @keyframes logoAnimation {
+            0% {
+                transform: scale(none);
             }
 
-            to {
-                top: 105px;
+            100% {
+                transform: scale(125%);
             }
         }
 
-        .logo:hover,
-        .arrow:hover {
-            transform: scale(80%);
-        }
-
-        .arrow {
-            position: relative;
-            animation: arrowAnimation 1.2s infinite alternate-reverse linear;
-            user-select: none;
-        }
-
+        /* TROQUE */
         .qr_code {
             position: absolute;
             display: none;
@@ -496,8 +434,7 @@
         }
 
         .container_primary p strong,
-        .green .container_secundary p strong,
-        .call_form p strong {
+        .green .container_secundary p strong {
             font-size: 38px;
             color: var(--green);
             text-shadow: 0.15rem 0.15rem var(--dark_green);
@@ -636,43 +573,6 @@
             object-fit: contain;
         }
 
-        .call_form {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            max-width: 50%;
-            min-height: 30rem;
-            width: 100%;
-            height: auto;
-            border-radius: 2rem;
-            padding: 3rem;
-            margin: 3rem 0;
-            font-family: 'Montserrat Alternates', sans-serif;
-            font-size: 28px;
-            line-height: 3.5rem;
-            background-color: var(--gray);
-            color: var(--green);
-            border: 2px solid var(--green);
-            box-shadow: 0 0 7px 7px var(--green);
-        }
-
-        .call_form:hover {
-            background-color: var(--dark_green);
-            color: var(--light_gray);
-            transform: scale(1.1);
-        }
-
-        .call_form:hover p strong {
-            font-size: 38px;
-            color: var(--gray);
-            text-shadow: 0.15rem 0.15rem var(--black);
-        }
-
-        .call_form img {
-            width: 50%;
-        }
-
         .text_call {
             display: flex;
             flex-direction: column;
@@ -685,29 +585,6 @@
         .text_call p {
             text-align: justify;
             font-size: 28px;
-        }
-
-        .call_form a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-height: 4rem;
-            width: 100%;
-            height: 100vh;
-            padding: 1rem 0;
-            border-radius: 3rem;
-            background-color: var(--black);
-            color: var(--light_gray);
-            font-size: 18px;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: 1s all ease
-        }
-
-        .call_form a:hover {
-            background-color: var(--light_gray);
-            color: var(--black);
-            border: 2px solid var(--black);
         }
 
         .info_project {
@@ -868,10 +745,6 @@
         }
 
         /* @media screen and (max-width: 1024px) {
-            .contacts_counter {
-                display: none;
-            }
-
             .qr_code {
                 opacity: 0;
             }
@@ -980,27 +853,6 @@
 
             .middle {
                 gap: 2rem;
-            }
-
-            .call_form {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                max-width: 100%;
-                min-height: 30rem;
-                width: 100%;
-                height: auto;
-                border-radius: 2rem;
-                padding: 1.5rem;
-                margin: 3rem 0;
-                font-family: 'Montserrat Alternates', sans-serif;
-                font-size: 28px;
-                line-height: 3.5rem;
-                background-color: var(--light_gray);
-                color: var(--green);
-                border: 2px solid var(--green);
-                box-shadow: 0 0 7px 7px var(--green);
             }
 
             .text_call {
@@ -1240,10 +1092,6 @@
                 text-align: center;
                 font-size: 22px;
             }
-
-            .call_form p strong {
-                font-size: 23px;
-            }
         } */
     </style>
 </head>
@@ -1415,18 +1263,6 @@
                 ARHAL com o intuito de fortificar os músculos atrofiados da mão de forma mais simples do que a
                 atualmente conhecida. </p>
         </div>
-
-        <!-- <div class="call_form">
-            <img src="images/call_form.png" alt="call_form.gif">
-
-
-            <div class="text_call">
-                <p>Clique aqui para conseguir o acesso antecipado a <strong>mão do futuro</strong> direto em sua própria
-                    casa!
-                </p>
-                <a href="#contacts">Clique Aqui!</a>
-            </div>
-        </div> -->
     </div>
 
     <div id="how" class="container_main green">
