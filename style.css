@@ -53,6 +53,27 @@ html {
     background: var(--green);
 }
 
+.name_main,
+.info,
+#hamburguer,
+.arrow_slide,
+.logo,
+h3 strong,
+.card p,
+.card img,
+.close,
+.close_qr_code,
+.container_main h2,
+.img_primary img,
+.container_secundary,
+.video_primary,
+.container_info,
+.container_info h2,
+.container_info p {
+    cursor: pointer;
+    transition: .5s all ease;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -115,9 +136,7 @@ nav {
     background-color: var(--green);
     color: var(--light_gray);
     padding: 2rem 3rem;
-    /* TROQUE */
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.5);
-
     z-index: 1;
 }
 
@@ -126,11 +145,6 @@ nav {
     font-family: 'The Seasons';
     font-size: 39px;
     letter-spacing: .1rem;
-}
-
-nav p {
-    font-size: 25px;
-    letter-spacing: .5rem;
     color: var(--light_gray);
 }
 
@@ -141,36 +155,18 @@ nav p {
 }
 
 .info {
-    font-size: 18px;
+    font-size: 19px;
     color: var(--light_gray);
-    transition: .5s all ease;
 }
 
-.info:hover,
-nav p:hover {
+.name_main:hover {
+    letter-spacing: -.2rem;
+}
+
+.name_main:hover,
+.info:hover {
     color: var(--black);
-    transform: scale(85%);
-    letter-spacing: normal;
-}
-
-nav p,
-#hamburguer,
-.arrow_slide,
-.logo,
-h3 strong,
-.card p,
-.card img,
-.close,
-.close_qr_code,
-.container_main h2,
-.img_primary img,
-.container_secundary,
-.video_primary,
-.container_info,
-.container_info h2,
-.container_info p {
-    cursor: pointer;
-    transition: .5s all ease;
+    transform: scale(110%);
 }
 
 .logo:hover {
