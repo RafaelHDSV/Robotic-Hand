@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="index, follow" />
+		<meta
+			name="description"
+			content="In this repository, a landing page was made for a robotic hand project, which aims to improve the life of someone who has muscle hypertrophy and cannot open their hand." />
+		<link rel="icon" type="image.png" sizes="32x32" href="images/marg_branco.png" />
+		<link rel="stylesheet" href="images/glider.min.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="description"
-        content="In this repository, a landing page was made for a robotic hand project, which aims to improve the life of someone who has muscle hypertrophy and cannot open their hand.">
-    <link rel="icon" type="image.png" sizes="32x32" href="images/marg_branco.png">
-    <link rel="stylesheet" href="images/glider.min.css">
+		<title>MARG | Muscle Atrophy Robotic Glove</title>
 
-    <title> MARG | Muscle Atrophy Robotic Glove </title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+	<body>
+		<div class="preloader">
+			<div class="lds-ring">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
 
-<body>
-    <div class="preloader">
-        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-    </div>
+		<header>
+			<nav>
+				<p class="name_main">M. a. r. g.</p>
 
-    <header>
-        <nav>
-            <p class="name_main">M. a. r. g. </p>
+				<div class="info_container">
+					<a class="info" href="#why">Porque?</a>
+					<a class="info" href="#how">Como?</a>
+					<a class="info" href="#what">O que?</a>
+					<a class="info" href="#contacts">Entrar em Contato</a>
+					<img id="hamburguer" src="images/icon-hamburger.svg" alt="icon-hamburger.svg" />
+				</div>
+			</nav>
 
-            <div class="info_container">
-                <a class="info" href="#why">Porque?</a>
-                <a class="info" href="#how">Como?</a>
-                <a class="info" href="#what">O que?</a>
-                <a class="info" href="#contacts">Entrar em Contato</a>
-                <img id="hamburguer" src="images/icon-hamburger.svg" alt="icon-hamburger.svg">
-            </div>
-        </nav>
-
-        <!-- <div class="login">
+			<!-- <div class="login">
             <img src="images/login_image.svg" alt="login_image.svg">
 
             <h2>Login</h2>
@@ -46,95 +51,98 @@
             </div>
         </div> -->
 
-        <img class="logo" src="images/marg.png" alt="marg.png">
-        <!-- <a href="#container_slide"><img id="arrow_header" class="arrow" src="images/icon-arrow-down.svg"
+			<img class="logo" src="images/marg.png" alt="marg.png" />
+			<!-- <a href="#container_slide"><img id="arrow_header" class="arrow" src="images/icon-arrow-down.svg"
                 alt="icon-arrow-down.svg"></a> -->
-        <!-- 
+			<!-- 
         <div class="qr_code">
             <span class="close_qr_code">&times;</span>
             <img src="images/qr_code.png" alt="qr_code.png">
         </div> -->
-    </header>
+		</header>
 
-    <div id="container_slide" class="container_slide">
-        <div class="arrow_slide_prev"></div>
+		<div id="container_slide" class="container_slide">
+			<div class="arrow_slide_prev"></div>
 
-        <div class="glider">
-            <div class="card">
-                <span>1</span>
-                <p>Adiciona o Arduino UNO</p>
-                <img class="img_card" src="images/step1.png" alt="step1.png">
-            </div>
+			<div class="glider">
+				<div class="card">
+					<span>1</span>
+					<p>Adiciona o Arduino UNO</p>
+					<img class="img_card" src="images/step1.png" alt="step1.png" />
+				</div>
 
-            <div class="card">
-                <span>2</span>
-                <p>Adiciona a Protoboard</p>
-                <img class="img_card" src="images/step2.png" alt="step2.png">
-            </div>
+				<div class="card">
+					<span>2</span>
+					<p>Adiciona a Protoboard</p>
+					<img class="img_card" src="images/step2.png" alt="step2.png" />
+				</div>
 
-            <div class="card">
-                <span>3</span>
-                <p>Adiciona 5 servomotores</p>
-                <img class="img_card" src="images/step3.png" alt="step3.png">
-            </div>
+				<div class="card">
+					<span>3</span>
+					<p>Adiciona 5 servomotores</p>
+					<img class="img_card" src="images/step3.png" alt="step3.png" />
+				</div>
 
-            <div class="card">
-                <span>4</span>
-                <p>Adiciona botão de liga / desliga</p>
-                <img class="img_card" src="images/step4.png" alt="step4.png">
-            </div>
+				<div class="card">
+					<span>4</span>
+					<p>Adiciona botão de liga / desliga</p>
+					<img class="img_card" src="images/step4.png" alt="step4.png" />
+				</div>
 
-            <div class="card">
-                <span>5</span>
-                <p>Adiciona Aparelho de Choque</p>
-                <img class="img_card" src="images/step5.png" alt="step5.png">
-            </div>
+				<div class="card">
+					<span>5</span>
+					<p>Adiciona Aparelho de Choque</p>
+					<img class="img_card" src="images/step5.png" alt="step5.png" />
+				</div>
 
-            <div class="card">
-                <span>6</span>
-                <p>Adiciona as ligações</p>
-                <img class="img_card" src="images/step6.png" alt="step6.png">
-            </div>
+				<div class="card">
+					<span>6</span>
+					<p>Adiciona as ligações</p>
+					<img class="img_card" src="images/step6.png" alt="step6.png" />
+				</div>
 
-            <div class="card">
-                <span>7</span>
-                <p>Projeto Final</p>
-                <img class="img_card" src="images/final_project.png" alt="final_project.png">
-            </div>
-        </div>
+				<div class="card">
+					<span>7</span>
+					<p>Projeto Final</p>
+					<img class="img_card" src="images/final_project.png" alt="final_project.png" />
+				</div>
+			</div>
 
-        <div class="arrow_slide_next"></div>
-        <div role="tablist" class="dots"></div>
+			<div class="arrow_slide_next"></div>
+			<div role="tablist" class="dots"></div>
 
-        <div id="modal_steps" class="modal">
-            <span class="close">&times;</span>
-            <img src="" class="modal-content" id="img_modal">
-        </div>
+			<div id="modal_steps" class="modal">
+				<span class="close">&times;</span>
+				<img src="" class="modal-content" id="img_modal" />
+			</div>
 
-        <!-- <svg class="svg_container_slide transition duration-300 ease-in-out delay-150" width="100%" height="100%"
+			<!-- <svg class="svg_container_slide transition duration-300 ease-in-out delay-150" width="100%" height="100%"
             id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M 0,500 C 0,500 0,250 0,250 C 125.59808612440196,231.4736842105263 251.19617224880392,212.94736842105263 337,219 C 422.8038277511961,225.05263157894737 468.81339712918646,255.68421052631578 539,274 C 609.1866028708135,292.3157894736842 703.5502392344499,298.3157894736843 821,279 C 938.4497607655501,259.6842105263157 1078.9856459330144,215.05263157894734 1186,206 C 1293.0143540669856,196.94736842105266 1366.5071770334928,223.47368421052633 1440,250 C 1440,250 1440,500 1440,500 Z"
                 stroke="none" stroke-width="0" fill="#d9d9d9" fill-opacity="1"
                 class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
         </svg> -->
-    </div>
+		</div>
 
-    <div id="why" class="container_main">
-        <a href="">
-            <h2>Porque?</h2>
-        </a>
+		<div id="why" class="container_main">
+			<a href="">
+				<h2>Porque?</h2>
+			</a>
 
-        <div class="container_primary">
-            <p>Aproximadamente 10 milhões de pessoas sobrevivem a um <strong>derrame</strong> a cada ano. Na grande
-                parte das vezes os resultados são permanentes, como: <strong>a perda de funções das mãos.</strong></p>
+			<div class="container_primary">
+				<p>
+					Aproximadamente 10 milhões de pessoas sobrevivem a um
+					<strong>derrame</strong> a cada ano. Na grande parte das vezes os resultados são permanentes, como:
+					<strong>a perda de funções das mãos.</strong>
+				</p>
 
-            <div class="img_primary">
-                <img src="images/hand_weakness.webp" alt="hand_weakness.webp">
-            </div>
-        </div>
+				<div class="img_primary">
+					<img src="images/hand_weakness.webp" alt="hand_weakness.webp" />
+				</div>
+			</div>
 
-        <!-- <div class="container_primary">
+			<!-- <div class="container_primary">
             <div class="img_primary">
                 <img src="images/hand_weakness_2.webp" alt="hand_weakness_2.webp">
             </div>
@@ -183,28 +191,32 @@
                 ARHAL com o intuito de fortificar os músculos atrofiados da mão de forma mais simples do que a
                 atualmente conhecida. </p>
         </div> -->
-    </div>
+		</div>
 
-    <div id="how" class="container_main green">
-        <a href="">
-            <h2>Como?</h2>
-        </a>
+		<div id="how" class="container_main green">
+			<a href="">
+				<h2>Como?</h2>
+			</a>
 
-        <div class="container_primary">
-            <div class="video_primary">
-                <iframe src="https://www.youtube.com/embed/ghAIac5Q99M" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
+			<div class="container_primary">
+				<div class="video_primary">
+					<iframe
+						src="https://www.youtube.com/embed/ghAIac5Q99M"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen>
+					</iframe>
+				</div>
 
-            <p>Em primeiro lugar tivemos a ideia do que fazer (uma luva robótica, que iria ajudar no
-                tratamento da atrofia muscular) e logo em seguida buscamos referências para conseguir
-                torna-lá realidade e nessa pesquisa conseguimos encontrar esse projeto com a mesma ideia que a nossa, o
-                FES, porém o FES utiliza Eletrochoques e nós utilizamos a simples força de fios</p>
-        </div>
+				<p>
+					Em primeiro lugar tivemos a ideia do que fazer (uma luva robótica, que iria ajudar no tratamento da atrofia muscular) e logo
+					em seguida buscamos referências para conseguir torna-lá realidade e nessa pesquisa conseguimos encontrar esse projeto com a
+					mesma ideia que a nossa, o FES, porém o FES utiliza Eletrochoques e nós utilizamos a simples força de fios
+				</p>
+			</div>
 
-        <!-- <div class="container_primary">
+			<!-- <div class="container_primary">
             <p>Concluído isso, passamos a pensar como seria o projeto no Tinkercad e logo conseguimos
                 encontrar um modelo desejado e efetuamos o seu design. Então o projeto já estava como deveria estar
                 no final, porém ainda faltavam alguns ajustes para torna-lo, finalmente, funcional. No
@@ -259,59 +271,70 @@
                 stroke="none" stroke-width="0" fill="#d9d9d9" fill-opacity="1"
                 class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
         </svg> -->
-    </div>
+		</div>
 
-    <div id="what" class="container_main">
-        <a href="">
-            <h2>O que?</h2>
-        </a>
+		<div id="what" class="container_main">
+			<a href="">
+				<h2>O que?</h2>
+			</a>
 
-        <div class="info_project">
-            <div class="container_info">
-                <h2>Natural</h2>
-                <p>Nossas luvas se conectam com os problemas dos usuários, aumentando a mobilidade de suas mãos de
-                    maneira natural e progressiva.</p>
-            </div>
+			<div class="info_project">
+				<div class="container_info">
+					<h2>Natural</h2>
+					<p>
+						Nossas luvas se conectam com os problemas dos usuários, aumentando a mobilidade de suas mãos de maneira natural e
+						progressiva.
+					</p>
+				</div>
 
-            <div class="middle">
-                <div class="container_info">
-                    <h2>Uso Diário</h2>
-                    <p>Perfeitamente desenvolvida para o uso diário, nossa luva é compacta, leve, fácil de usar,
-                        discreta
-                        e confortável, fazendo com que seja a melhor experiência para o usuário.</p>
-                </div>
+				<div class="middle">
+					<div class="container_info">
+						<h2>Uso Diário</h2>
+						<p>
+							Perfeitamente desenvolvida para o uso diário, nossa luva é compacta, leve, fácil de usar, discreta e confortável,
+							fazendo com que seja a melhor experiência para o usuário.
+						</p>
+					</div>
 
-                <div class="container_info">
-                    <h2>Indicações</h2>
-                    <p>Facilitação neuromuscular, Substituição ortica, Controle de Espasticidade, Parapleggias,
-                        paraparesias (Hemiplegias, lesão medular, etc.), Esclerose múltipla, Hiportrofia por desuso,
-                        Paralisia cerebral</p>
-                </div>
+					<div class="container_info">
+						<h2>Indicações</h2>
+						<p>
+							Facilitação neuromuscular, Substituição ortica, Controle de Espasticidade, Parapleggias, paraparesias (Hemiplegias,
+							lesão medular, etc.), Esclerose múltipla, Hiportrofia por desuso, Paralisia cerebral
+						</p>
+					</div>
 
-                <div class="container_info">
-                    <h2>Importante</h2>
-                    <p>Nós lhe damos uma mãozinha para você conseguir aproveitar quem você ama e quem você se importa
-                        por mais tempo.</p>
-                </div>
-            </div>
+					<div class="container_info">
+						<h2>Importante</h2>
+						<p>Nós lhe damos uma mãozinha para você conseguir aproveitar quem você ama e quem você se importa por mais tempo.</p>
+					</div>
+				</div>
 
+				<div class="container_info">
+					<h2>Funcional</h2>
+					<p>
+						A luva ARHAL tem como base a produção da contração através de motores, que despolariza o nervo motor, produzindo uma
+						resposta sincrônica em todas as unidades motoras do músculo.
+					</p>
+				</div>
+			</div>
 
-            <div class="container_info">
-                <h2>Funcional</h2>
-                <p>A luva ARHAL tem como base a produção da contração através de motores, que despolariza o nervo motor,
-                    produzindo uma resposta sincrônica em todas as unidades motoras do músculo.</p>
-            </div>
-        </div>
+			<h3>E assim nós conseguimos criar o <strong>ARHAL</strong></h3>
 
-        <h3>E assim nós conseguimos criar o <strong>ARHAL</strong></h3>
+			<model-viewer
+				src="images/final_project.glb"
+				ar-modes="webxr scene-viewer quick-look"
+				camera-controls
+				shadow-intensity="2"
+				exposure="0.37"
+				shadow-softness="0.4"
+				auto-rotate
+				rotation-per-second="80deg"
+				camera-orbit="20deg 82deg auto">
+			</model-viewer>
+		</div>
 
-        <model-viewer src="images/final_project.glb" ar-modes="webxr scene-viewer quick-look" camera-controls
-            shadow-intensity="2" exposure="0.37" shadow-softness="0.4" auto-rotate rotation-per-second="80deg"
-            camera-orbit="20deg 82deg auto">
-        </model-viewer>
-    </div>
-
-    <!-- <div class="container_form">
+		<!-- <div class="container_form">
         <form id="contacts" method="post">
             <div class="name">
                 <label for="name">Nome: </label>
@@ -332,15 +355,13 @@
         </form>
     </div> -->
 
-    <footer>
-        <p>Coded by <a href="">Rafael Henrique de Sousa Vieira</a>.
-        </p>
-    </footer>
+		<footer>
+			<p>Coded by <a href="">Rafael Henrique de Sousa Vieira</a>.</p>
+		</footer>
 
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script src="images/glider.min.js"></script>
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script src="images/glider.min.js"></script>
 
-    <script src="script.js"></script>
-</body>
-
+		<script src="script.js"></script>
+	</body>
 </html>
