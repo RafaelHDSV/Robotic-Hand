@@ -102,12 +102,12 @@ close.addEventListener('click', () => {
     modal.style.display = 'none'
 })
 
-logo.addEventListener('click', () => {
-    if (qrCode.style.display = 'none') {
-        qrCode.style.display = 'flex'
-    }
-})
+// logo.addEventListener('click', () => {
+//     if (qrCode.style.display = 'none') {
+//         qrCode.style.display = 'flex'
+//     }
+// })
 
-closeQrCode.addEventListener('click', () => {
-    qrCode.style.display = 'none'
-})
+// closeQrCode.addEventListener('click', () => {
+//     qrCode.style.display = 'none'
+// })

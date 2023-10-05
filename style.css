@@ -180,6 +180,7 @@ nav {
 	font-size: 39px;
 	letter-spacing: 0.1rem;
 	color: var(--light_gray);
+	transition: 0.5s all ease;
 }
 
 .info_container {
@@ -194,7 +195,7 @@ nav {
 }
 
 .name_main:hover {
-	letter-spacing: -0.2rem;
+	letter-spacing: 0.3rem;
 }
 
 .name_main:hover,
@@ -687,58 +688,19 @@ h3 strong {
 	color: var(--green);
 	border-top: 2px solid var(--green);
 	border-bottom: 2px solid var(--green);
+	margin: 0 3rem;
 }
 
 h3 strong:hover {
 	color: var(--dark_green);
 	border-color: var(--dark_green);
-	transform: scale(75%);
+	transform: scale(155%);
 	letter-spacing: normal;
 }
 
 model-viewer {
 	height: 40rem;
 	width: 30rem;
-}
-
-.container_form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-width: 100%;
-	min-height: 45rem;
-	padding: 3rem 0;
-	box-shadow: 15px 0px 25px 5px rgba(0, 0, 0, 0.2);
-	background-color: var(--green);
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 3rem;
-	background-color: var(--green);
-	color: var(--light_gray);
-}
-
-form input {
-	border: none;
-	outline: 0;
-	width: 100%;
-	border-radius: 1rem;
-	margin-top: 0.3rem;
-}
-
-form button {
-	border: none;
-	outline: 0;
-	padding: 1rem 0;
-	border-radius: 3rem;
-	background-color: var(--black);
-	color: var(--light_gray);
-	cursor: pointer;
-	transition: 1s all ease;
 }
 
 footer {
