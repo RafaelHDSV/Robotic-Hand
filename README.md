@@ -4,7 +4,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Robotic-Hand?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/RafaelHDSV/Robotic-Hand?style=for-the-badge)
 
-<img src="bg.jpg" alt="bg.jpg">
+<img src="/images/main.png" alt="main.png">
 
 > In this repository, a landing page was made for a robotic hand project, which aims to improve the life of someone who has muscle hypertrophy and cannot open their hand.
 
@@ -42,21 +42,18 @@ Users should be able to:
 
   - Desktop
   
-    ![](bg.jpg)
+    ![](/images/desktop.png)
     
   - Mobile
     
-    <img src="bg.jpg" alt="bg.jpg" width="300px">
+    <img src="/images/mobile.png" alt="mobile.png" width="300px">
 
 ## My process
 
 ### Built with
 
-- DESCRIPTION OF LANGUAGE
-<!--- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Javascript properties-->
+- HTML
+- CSS
+- JAVASCRIPT
 
 [⬆ Back to the top](#Robotic-Hand)<br>
