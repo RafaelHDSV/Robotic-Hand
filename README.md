@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: marg-tcc.netlify.com
+- Live Site URL: [marg-tcc.netlify.com](https://marg-tcc.netlify.app)
 
 ### Screenshot
 
