@@ -1,12 +1,12 @@
-# NAME_OF_REPOSITORY
+# Robotic-Hand
 
-![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/NAME_OF_REPOSITORY?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/NAME_OF_REPOSITORY?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/RafaelHDSV/NAME_OF_REPOSITORY?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Robotic-Hand?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Robotic-Hand?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/RafaelHDSV/Robotic-Hand?style=for-the-badge)
 
 <img src="bg.jpg" alt="bg.jpg">
 
-> DESCRIPTION HERE: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and mor recently with desktop publishing software like Aldus PageMaker includin
+> In this repository, a landing page was made for a robotic hand project, which aims to improve the life of someone who has muscle hypertrophy and cannot open their hand.
 
 ## Table of contents
 
@@ -36,8 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: URL SOLUTION HERE
-- Live Site URL: URL SITE HERE
+- Live Site URL: marg-tcc.netlify.com
 
 ### Screenshot
 
@@ -60,4 +59,4 @@ Users should be able to:
 - CSS Grid
 - Javascript properties-->
 
-[⬆ Back to the top](#name_of_repository)<br>
+[⬆ Back to the top](#Robotic-Hand)<br>
